@@ -1,0 +1,40 @@
+var secondItem = document.querySelector('.list-group-items':nthchild(2)') ;
+
+
+secondItem.style.color = 'green';
+
+
+var ThirdItem = document.querySelector('.list-group-items':nthchild(3)') ;
+
+
+ThirdItem.style.color = 'green';
+
+
+//QUERY SELECTOR ALL 
+
+
+var ThirdItem = document.querySelectorAll('.li:nthchild(2)') ;
+
+
+ThirdItem.style.color = 'green';
+
+
+
+var odd = ocument.querySelectorAll('.li:nthchild(odd)') ;
+
+
+for(int i=0;i<odd.length;i++)
+
+{
+
+  odd.style.backgroundColor = 'green';
+
+
+}
+
+
+// difference between queryselector and queryselectorall
+/*
+The difference between these two is that querySelector returns a single element matching its selection criteria. querySelectorAll, on the other hand, returns all elements matching the search criteria in an iterable list.
+*/
+
