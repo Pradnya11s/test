@@ -1,0 +1,36 @@
+var itemList = document.querySelector("#items');
+
+itemList.parentElement.style.backgroundColor = 'green';
+
+itemList.children[1].style.backgroundColor = 'blue';
+
+
+itemList.firstChild.style.backgroundColor = 'red';
+
+itemList.firstElementChild.style.backgroundColor = 'coral';
+
+
+itemList.lastChild.style.backgroundColor = 'red';
+
+itemList.lastElementChild.textContent= 'Hello last element child';
+
+
+
+itemList.nextsibling.style.backgroundColor = 'red';
+
+itemList.nextelementsibling.textContent= 'Hello next sibling';
+
+
+itemList.previoussibling.style.backgroundColor = 'red';
+
+itemList.previouselementsibling.textContent= 'Hello next sibling';
+
+var newDiv = document.createElement('div');
+
+newDiv.className = 'hello';
+
+newDiv.setAtrribute('title','Hello Div');
+
+var newDivText = document.createTextNode('Hello World');
+
+newDiv.appendChild(newDivText);
