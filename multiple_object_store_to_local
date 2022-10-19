@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+
+<h2>HTML Forms</h2>
+
+
+<form action="/action_page.php">
+
+ <label for="fname">First name:</label><br>
+
+ <input type="text" id="fname" name="fname" value="John"><br>
+
+ <label for="lname">Last name:</label><br>
+
+ <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+ <!input type="submit" value="Submit">
+
+ <button onclick="test()">submit</button>
+
+</form> 
+
+
+ <script>
+
+   function test() {
+
+
+     var x= document.getElementById("fname");
+
+     let my_x = JSON.stringify(x);
+
+     localStorage.setItem('firstname',my_x);
+
+     var y= document.getElementById("lname");
+
+     let my_y = JSON.stringify(y);
+
+     localStorage.setItem('last_name',my_y);
+
+
+
+     let myObj[3] = {
+
+         name: 'Pradnya'
+
+         age : 32 ;
+         
+         
+         name: 'sneha'
+
+         age : 31 ;
+         
+         
+                  
+         name: 'rita'
+
+         age : 33 ;
+         
+
+         };
+
+		 for(int i=0li<3;i++)
+         {
+         	let my_obj_serialized[i] = JSON.stringify(myObj[i]);
+
+         	localStorage.setItem('MY obj',my_obj_serialized[i]);
+         }
+
+
+         alert("Your form value stored in local storage);
+
+
+   }
+
+ </script>
+
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+
+</body>
+
+</html>
